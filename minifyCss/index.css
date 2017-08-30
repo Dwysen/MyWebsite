@@ -1,0 +1,134 @@
+.topSection {
+  width: 100%;
+  height: 800px;
+  background-color: aqua;
+}
+.accordionSection {
+  position: relative;
+  width: 100%;
+}
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+}
+.bg-box-1 {
+  background: url('../images/power1.jpeg') no-repeat center / cover;
+}
+.bg-box-2 {
+  background: url('../images/power2.jpg') no-repeat center / cover;
+}
+.bg-box-3 {
+  background: url('../images/power3.jpg') no-repeat center / cover;
+}
+.bg-box-4 {
+  background: url('../images/power4.jpg') no-repeat center / cover;
+}
+#wrap {
+  position: absolute;
+  margin: auto;
+  width: 1000px;
+  height: 400px;
+}
+#wrap > ul {
+  width: 120%;
+  list-style: none;
+}
+#wrap > ul > li {
+  float: left;
+  width: 100px;
+  height: 400px;
+  cursor: pointer;
+}
+#wrap > ul > li:nth-child(1) {
+  background: url('../images/power1.jpeg') no-repeat center / cover;
+}
+#wrap > ul > li:nth-child(2) {
+  background: url('../images/power2.jpg') no-repeat center / cover;
+}
+#wrap > ul > li:nth-child(3) {
+  background: url('../images/power3.jpg') no-repeat center / cover;
+}
+#wrap > ul > li:nth-child(4) {
+  background: url('../images/power4.jpg') no-repeat center / cover;
+  width: 800px;
+}
+#wrap > ul > li > .text {
+  width: 100px;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+}
+#wrap > ul > li > .text p {
+  padding: 20px 40px;
+  font-family: 'Microsoft yahei';
+  color: #fff;
+}
+/*尼泊尔手风琴*/
+/*.bg {*/
+/*position: relative;*/
+/*!* top: 0; *!*/
+/*!* left: 0; *!*/
+/*width: 100%;*/
+/*height: 1000px;*/
+/*display: none;*/
+/*}*/
+/*.bg-box-1 {*/
+/*background: url('../images/power1.jpeg') no-repeat center/cover;*/
+/*display: block;*/
+/*}*/
+/*.bg-box-2 {*/
+/*background: url('../images/power2.jpg') no-repeat center/cover;*/
+/*}*/
+/*.bg-box-3 {*/
+/*background: url('../images/power3.jpg') no-repeat center/cover;*/
+/*}*/
+/*.bg-box-4 {*/
+/*background: url('../images/power4.jpg') no-repeat center/cover;*/
+/*}*/
+/*.niboerSection {*/
+/*position: relative;*/
+/*}*/
+/*#wrap {*/
+/*position: absolute;*/
+/*!* overflow: hidden; *!*/
+/*top: 50px;*/
+/*!* bottom: -2000px; *!*/
+/*margin: auto;*/
+/*width: 1200px;*/
+/*height: 603px;*/
+/*}*/
+/*#wrap > ul {*/
+/*width: 120%;*/
+/*list-style: none;*/
+/*}*/
+/*#wrap > ul > li {*/
+/*float: left;*/
+/*width: 100px;*/
+/*height: 600px;*/
+/*cursor: pointer;*/
+/*}*/
+/*#wrap > ul > li:nth-child(1) {*/
+/*background: url('../images/power1.jpeg') no-repeat center/cover;*/
+/*}*/
+/*#wrap > ul > li:nth-child(2) {*/
+/*background: url('../images/power2.jpg') no-repeat center/cover;*/
+/*}*/
+/*#wrap > ul > li:nth-child(3) {*/
+/*background: url('../images/power3.jpg') no-repeat center/cover;*/
+/*}*/
+/*#wrap > ul > li:nth-child(4) {*/
+/*background: url('../images/power4.jpg') no-repeat center/cover;*/
+/*width: 700px;*/
+/*}*/
+/*#wrap > ul > li > .text {*/
+/*width: 100px;*/
+/*height: 100%;*/
+/*background: #000;*/
+/*opacity: .5;*/
+/*}*/
+/*#wrap > ul > li > .text p {*/
+/*padding: 20px 40px;*/
+/*font-family: 'Microsoft yahei';*/
+/*color: #fff;*/
+/*}*/

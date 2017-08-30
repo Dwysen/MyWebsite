@@ -1,0 +1,69 @@
+@sectionH:800px;
+
+.topSection {
+    width:100%;
+    height: @sectionH;
+    background-color: aqua;
+}
+@accordtionHeight:400px;
+.accordionSection {
+    position: relative;
+    width: 100%;
+    .bg {
+        position: absolute;
+        width: 100%;
+        height: 700px;
+    }
+    .bg-box-1 {
+        background: url('../images/power1.jpeg') no-repeat center/cover;
+    }
+    .bg-box-2 {
+        background: url('../images/power2.jpg') no-repeat center/cover;
+    }
+    .bg-box-3 {
+        background: url('../images/power3.jpg') no-repeat center/cover;
+    }
+    .bg-box-4 {
+        background: url('../images/power4.jpg') no-repeat center/cover;
+    }
+    #accordionList {
+        position: absolute;
+        margin: auto;
+        width: 1000px;
+        height: @accordtionHeight;
+        ul {
+            width: 120%;
+            list-style: none;
+        }
+        li {
+            float: left;
+            width: 100px;
+            height: @accordtionHeight;
+            cursor: pointer;
+            .text{
+                width: 100px;
+                height: 100%;
+                background: #000;
+                opacity: .5;
+                p{
+                    padding: 20px 40px;
+                    //font-family: 'Microsoft yahei';
+                    color: #fff;
+                }
+            }
+        }
+        li:nth-child(1) {
+            background: url('../images/power1.jpeg') no-repeat center/cover;
+        }
+        li:nth-child(2){
+            background: url('../images/power2.jpg') no-repeat center/cover;
+        }
+        li:nth-child(3){
+            background: url('../images/power3.jpg') no-repeat center/cover;
+        }
+        li:nth-child(4){
+            background: url('../images/power4.jpg') no-repeat center/cover;
+            width: 800px;
+        }
+    }
+}
