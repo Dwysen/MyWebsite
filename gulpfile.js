@@ -9,3 +9,24 @@ gulp.task('convertLess',function () {
         .pipe(less()) //该任务调用的模块
         .pipe(gulp.dest('css'));
 });
+
+// gulp.task('watch',function () {
+//     gulp.watch('css/*.less',['minifycss']);
+//     gulp.watch('tpl/*.html',['fileinclude']);
+//     gulp.watch('tpl/*.htm',['fileinclude']);
+//     gulp.watch('component/*.html',['fileinclude']);
+// });
+
+// gulp.task('watchfile',['fileinclude'],function () {
+//     gulp.watch('tpl/*.html',['fileinclude']);
+// });
+
+// gulp.task('watchless',['doless'],function () {
+//     gulp.watch('css/*.less',['minifycss']);
+//     gulp.watch('css/*.css',['minifycss']);
+// });
+
+gulp.task('watch',function () {
+   gulp.watch('css/*.less',['convertLess']);
+});
+

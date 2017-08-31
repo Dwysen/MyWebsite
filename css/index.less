@@ -1,18 +1,20 @@
-@sectionH:800px;
-
+@topSectionH:800px;
 .topSection {
     width:100%;
-    height: @sectionH;
-    background-color: aqua;
+    height: @topSectionH;
+    background-color: #255359;
 }
-@accordtionHeight:400px;
+
+@accordtionBgHeight:1000px;
+@accordtionHeight:800px;
 .accordionSection {
     position: relative;
     width: 100%;
+    height: @accordtionBgHeight;
     .bg {
         position: absolute;
         width: 100%;
-        height: 700px;
+        height: @accordtionBgHeight;
     }
     .bg-box-1 {
         background: url('../images/power1.jpeg') no-repeat center/cover;
@@ -28,8 +30,11 @@
     }
     #accordionList {
         position: absolute;
+        top:100px;
+        right:200px;
         margin: auto;
         width: 1000px;
+        overflow: hidden;
         height: @accordtionHeight;
         ul {
             width: 120%;
@@ -66,4 +71,40 @@
             width: 800px;
         }
     }
+}
+
+.bgSection{
+    position: relative;
+    background-attachment: fixed;
+    background-image: url("../images/power3.jpg");
+    background-size: cover;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+    .mengban{
+        //position: absolute;
+        width: 100%;
+        height: 100%;
+        background: white;
+        opacity: 0.22;
+    }
+    .bgSectionTitle{
+        position: absolute;
+        color: white;
+        top: 20%;
+        left: 20%;
+        font-size: 80px;
+    }
+    .bgSectionIntro{
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 20%;
+        font-size: 33px;
+        line-height: 2;
+    }
+
+
+
 }

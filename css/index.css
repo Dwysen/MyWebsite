@@ -1,16 +1,17 @@
 .topSection {
   width: 100%;
   height: 800px;
-  background-color: aqua;
+  background-color: #255359;
 }
 .accordionSection {
   position: relative;
   width: 100%;
+  height: 1000px;
 }
 .accordionSection .bg {
   position: absolute;
   width: 100%;
-  height: 700px;
+  height: 1000px;
 }
 .accordionSection .bg-box-1 {
   background: url('../images/power1.jpeg') no-repeat center / cover;
@@ -26,9 +27,12 @@
 }
 .accordionSection #accordionList {
   position: absolute;
+  top: 100px;
+  right: 200px;
   margin: auto;
   width: 1000px;
-  height: 400px;
+  overflow: hidden;
+  height: 800px;
 }
 .accordionSection #accordionList ul {
   width: 120%;
@@ -37,7 +41,7 @@
 .accordionSection #accordionList li {
   float: left;
   width: 100px;
-  height: 400px;
+  height: 800px;
   cursor: pointer;
 }
 .accordionSection #accordionList li .text {
@@ -62,4 +66,35 @@
 .accordionSection #accordionList li:nth-child(4) {
   background: url('../images/power4.jpg') no-repeat center / cover;
   width: 800px;
+}
+.bgSection {
+  position: relative;
+  background-attachment: fixed;
+  background-image: url("../images/power3.jpg");
+  background-size: cover;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+.bgSection .mengban {
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.22;
+}
+.bgSection .bgSectionTitle {
+  position: absolute;
+  color: white;
+  top: 20%;
+  left: 20%;
+  font-size: 80px;
+}
+.bgSection .bgSectionIntro {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 20%;
+  font-size: 33px;
+  line-height: 2;
 }
