@@ -1,110 +1,227 @@
-@topSectionH:800px;
-.topSection {
-    width:100%;
-    height: @topSectionH;
-    background-color: #255359;
+.navCustom {
+  background-color: #1C1C1C !important;
 }
 
-@accordtionBgHeight:1000px;
-@accordtionHeight:800px;
+@topSectionH: 800px;
+.topSection {
+  width: 100%;
+  height: @topSectionH;
+  background-color: #554236;
+}
+
+@accordtionBgHeight: 1000px;
+@accordtionHeight: 800px;
 .accordionSection {
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: @accordtionBgHeight;
+  .mengban {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #080808;
+    opacity: 0.22;
+  }
+  .bg {
+    position: absolute;
     width: 100%;
     height: @accordtionBgHeight;
-    .bg {
-        position: absolute;
-        width: 100%;
-        height: @accordtionBgHeight;
-    }
-    .bg-box-1 {
-        background: url('../images/power1.jpeg') no-repeat center/cover;
-    }
-    .bg-box-2 {
-        background: url('../images/power2.jpg') no-repeat center/cover;
-    }
-    .bg-box-3 {
-        background: url('../images/power3.jpg') no-repeat center/cover;
-    }
-    .bg-box-4 {
-        background: url('../images/power4.jpg') no-repeat center/cover;
-    }
-    #accordionList {
-        position: absolute;
-        top:100px;
-        right:200px;
-        margin: auto;
-        width: 1000px;
-        overflow: hidden;
-        height: @accordtionHeight;
-        ul {
-            width: 120%;
-            list-style: none;
-        }
-        li {
-            float: left;
-            width: 100px;
-            height: @accordtionHeight;
-            cursor: pointer;
-            .text{
-                width: 100px;
-                height: 100%;
-                background: #000;
-                opacity: .5;
-                p{
-                    padding: 20px 40px;
-                    //font-family: 'Microsoft yahei';
-                    color: #fff;
-                }
-            }
-        }
-        li:nth-child(1) {
-            background: url('../images/power1.jpeg') no-repeat center/cover;
-        }
-        li:nth-child(2){
-            background: url('../images/power2.jpg') no-repeat center/cover;
-        }
-        li:nth-child(3){
-            background: url('../images/power3.jpg') no-repeat center/cover;
-        }
-        li:nth-child(4){
-            background: url('../images/power4.jpg') no-repeat center/cover;
-            width: 800px;
-        }
-    }
-}
-
-.bgSection{
-    position: relative;
-    background-attachment: fixed;
-    background-image: url("../images/power3.jpg");
-    background-size: cover;
-    height: 800px;
-    background-repeat: no-repeat;
-    background-position: center center;
+    z-index: -1;
+  }
+  .bg-box-1 {
+    background: url('../images/power1.jpeg') no-repeat center/cover;
+  }
+  .bg-box-2 {
+    background: url('../images/power2.jpg') no-repeat center/cover;
+  }
+  .bg-box-3 {
+    background: url('../images/power3.jpg') no-repeat center/cover;
+  }
+  .bg-box-4 {
+    background: url('../images/power4.jpg') no-repeat center/cover;
+  }
+  #accordionList {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    margin: auto;
+    width: 1000px;
+    overflow: hidden;
+    height: @accordtionHeight;
     z-index: 1;
-    .mengban{
-        //position: absolute;
-        width: 100%;
+    ul {
+      width: 120%;
+      list-style: none;
+    }
+    li {
+      float: left;
+      width: 100px;
+      height: @accordtionHeight;
+      cursor: pointer;
+      .text {
+        width: 100px;
         height: 100%;
-        background: white;
-        opacity: 0.22;
+        background: #000;
+        opacity: .5;
+        p {
+          padding: 20px 40px;
+          //font-family: 'Microsoft yahei';
+          color: #fff;
+        }
+      }
     }
-    .bgSectionTitle{
-        position: absolute;
-        color: white;
-        top: 20%;
-        left: 20%;
-        font-size: 80px;
+    li:nth-child(1) {
+      background: url('../images/power1.jpeg') no-repeat center/cover;
     }
-    .bgSectionIntro{
-        position: absolute;
-        color: white;
-        top: 50%;
-        left: 20%;
-        font-size: 33px;
-        line-height: 2;
+    li:nth-child(2) {
+      background: url('../images/power2.jpg') no-repeat center/cover;
+    }
+    li:nth-child(3) {
+      background: url('../images/power3.jpg') no-repeat center/cover;
+    }
+    li:nth-child(4) {
+      background: url('../images/power4.jpg') no-repeat center/cover;
+      width: 800px;
+    }
+  }
+}
+
+.bgSection {
+  //filter:blur(1px);
+  //-webkit-filter:blur(1px);
+  //-ms-filter:blur(1px);
+  position: relative;
+  background-attachment: fixed;
+  background-image: url("../images/power3.jpg");
+  background-size: cover;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+  .mengban {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.22;
+  }
+  .bgSectionTitle {
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 20%;
+    font-size: 80px;
+  }
+  .bgSectionIntro {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 20%;
+    font-size: 33px;
+    line-height: 2;
+  }
+}
+
+/* imgHover */
+.center {
+  text-align: center;
+}
+.imgSection {
+  overflow: hidden;
+  padding-top: 150px;
+  height: 666px;
+  background-color: #554236;
+
+  figure {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+    p {
+      letter-spacing: 1px;
+      font-size: 66.6%;
+    }
+    img {
+      position: relative;
+      display: block;
+      opacity: 0.8;
+    }
+    figcaption {
+      box-sizing: border-box;
+      padding: 2em;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.25em;
+
+      /*-webkit-backface-visibility: hidden;*/
+      /*backface-visibility: hidden;*/
+
+    }
+    figcaption, figcaption > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
+    figcaption::before, figcaption::after {
+      pointer-events: none;
+    }
+  }
+}
+figure.effect-apollo {
+  img {
+    opacity: 0.95;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.05, 1.05, 1);
+    transform: scale3d(1.05, 1.05, 1);
+  }
+  figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    content: '';
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  }
+  p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 0 1em;
+    max-width: 150px;
+    border-right: 4px solid #fff;
+    text-align: right;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+  }
+  &:hover {
+    img {
+      opacity: 0.6;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    p {
+      opacity: 1;
+      -webkit-transition-delay: 0.1s;
+      transition-delay: 0.1s;
+    }
+    figcaption::before {
+      -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+      transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+    }
 
+  }
 
 }
+/* imgHover End */
